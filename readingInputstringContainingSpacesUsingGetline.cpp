@@ -1,5 +1,5 @@
 /*
-*Reading an input string containg spaces using getline()
+*Reading an input string containg spaces using getline(cin, stringVar)
 *In order to get an entire line in the program
 *remember strings are not avilable normally you'll need to import the header
 *file that allows use of the string library in c++
