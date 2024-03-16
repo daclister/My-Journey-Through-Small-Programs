@@ -1,30 +1,34 @@
 /*
-*Reading an input string containg spaces using getline(cin, stringVar)
-*In order to get an entire line in the program
-*remember strings are not avilable normally you'll need to import the header
-*file that allows use of the string library in c++
+*Sometimes you wich to get white space characters into a string(characters in a sequence) such as the input of a name
+*for such a case use the function getline(cin, yourStringVariablesName) it gets all
+*the remaing text on the current input line, up to the next newline character! (this is removed from input but not put into your string)
 */
 
-#include <iosteam>
-#include <string>
+#include <iostream>
+#include <string> // remember c++ has no native string functions you must import them from the library
 using namespace std;
 
 int main(){
-	//variables
-	string firstName;
-	string lastName;
-	
-	//user prompts
-	cout << "Enter first name:" << endl;
-	//the example of using getline in our application
-	getline(cin, firstName); // gets the entire line up till ENTER
-	
-	cout << "Enter last name:" << endl;
-	getline(cin, lastname); // Gets entire line up to ENTER
-	
-	cout << endl;
-	cout << "Welcome " << firstName << " " << lastname << "!" << endl;
-	cout << "May I call you " << firstName << "?" << endl;
-	
-	return 0;
+   string firstName;
+   string lastName;
+   
+   cout << "Enter first name:" << endl;
+   getline(cin, firstName); // Gets entire line up to ENTER
+   
+   cout << "Enter last name:" << endl;
+   getline(cin, lastName); // gets entire line up to ENTER
+   
+   cout << "Enter last name:" << endl;
+   getline(cin, lastName); // gets entire line up to ENTER
+   
+   cout << endl;
+   cout << "Welcome " << firstName << " " << lastName << "!" << endl;
+   cout << "May I call you " << firstName << " " << lastName << "?" << endl;
+   
+   return 0;
 }
+
+/*
+Keep in mind Mixing cin >> and getline() can be tricky,
+because cin >> leaves the newline in the input, while getline() does not skip leading whitespace.
+*/
