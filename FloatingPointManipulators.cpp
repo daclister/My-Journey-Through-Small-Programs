@@ -16,7 +16,7 @@ int main (){
 	cout << setprecision(8) << miles << " (p = 8)" << endl;
 	cout << setprecision(5) << miles << " (p = 5)" << endl;
 	cout << setprecision(2) << miles << " (p = 2)" << endl;
-	cout << miles << endl < endl;
+	cout << miles << endl;
 	
 	// fixed uses fixed point notation
 	cout << fixed;
