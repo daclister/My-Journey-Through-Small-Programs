@@ -5,14 +5,15 @@
 */
 #include<iostream>
 using namespace std;
-//A struct enables creating a variable with data members.
-int main (){
 struct StructTypeName{
 	dataType item1; //Don't forget a dataType is just the type of data you are working with for example an int data type is nothing more than an integer value such as -1, or 2
 	dataType item2; //these subitems are called data members.
 	... // this dot notation is just here to show you that you can have anynumber of subitems you want as long as there is enough memory for them!
 	type itemN;
 };
+
+//A struct enables creating a variable with data members.
+int main (){
 
 ...
 StructTypeName myVar; // your variable that you will have hold the data from the structs sub categories

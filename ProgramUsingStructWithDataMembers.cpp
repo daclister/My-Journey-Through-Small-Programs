@@ -6,13 +6,14 @@
 #include<iostream>
 using namespace std;
 //A struct enables creating a variable with data members.
-int main (){
-	//Basic syntaxt for a struct defined with the dataType groupedVariableName{dataType subVariableName};
 	struct TimeHrMin{
 		//struct just defines new type; no memory is allocated
 		int hrVal;
 		int minVal;
 	}
+int main (){
+	//Basic syntaxt for a struct defined with the dataType groupedVariableName{dataType subVariableName};
+
 	
 	//structs use dot notation in order to define the variables that will go into the sub categorys
 	...
