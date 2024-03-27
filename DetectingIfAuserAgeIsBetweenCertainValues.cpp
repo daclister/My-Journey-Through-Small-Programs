@@ -1,5 +1,6 @@
 /*
-*A small program that detects if a user is Elegible for services by detecting an age range
+*A small program that detects if a number is a "Special number" if the number
+*is 0, -99, or 44
 */
 #include <iostream>
 using namespace std;
